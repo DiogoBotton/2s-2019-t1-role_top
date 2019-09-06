@@ -55,7 +55,7 @@
                 <input type="text" id="cep" required maxlength="8">
 
                 <label for="cpf-cnpj">CPF/CNPJ *</label>
-                <input type="text" id="cpf-cnpj" required maxlength="14">
+                <input type="text" id="cpf-cnpj" required maxlength="14" placeholder="_ _ _ . _ _ _ . _ _ _ - _ _">
 
                 <label for="tel-cel">Tel/Cel *</label>
                 <input type="tel" id="tel-cel" required maxlength="11" placeholder="(11) _ _ _ _ - _ _ _ _"><br>
@@ -64,7 +64,7 @@
 
 
                 <label for="termos">Termos de uso:</label>
-                <textarea class="termos" rows="6" cols="35"
+                <textarea class="termos" rows="6"
                     disabled>A compreensão de um texto é a análise e decodificação do que está realmente escrito, seja das frases ou das ideias presentes. Já a interpretação de texto, está ligada às conclusões que podemos chegar ao conectar as ideias do texto com a realidade. É o entendimento subjetivo que o leitor teve sobre o texto. Nas favelas, no Senado Sujeira pra todo lado Ninguém respeita a Constituição Mas todos acreditam no futuro da nação Que país é esse?Que país é esse?Que país é esse?No Amazonas, no Araguaia iá, iá Na Baixada Fluminense Mato Grosso, Minas Gerais E no Nordeste tudo em paz Na morte eu descanso Mas o sangue anda solto Manchando os papéis, documentos fiéis Ao descanso do patrão Que país é esse?</textarea><br>
                 <div>
 
@@ -73,8 +73,9 @@
 
                     <input type="radio" id="termo-recusado" name="termos">
                     <label for="termo-recusado">Não aceito os termos de uso.</label>
-
-                    <input type="submit" id="bt-enviar" value="Cadastrar-me">
+                    <div>
+                        <input type="submit" id="bt-enviar" value="Cadastrar-me">
+                    </div>
                 </div>
             </form>
         </div>

@@ -35,8 +35,6 @@
     <main>
         <div class="titulo">
             <img src="Img/titulo agendamento.svg">
-            <img src="Img/passo 1.png">
-            <p>Especificações do Evento</p>
         </div>
 
         <!-- <div id="tabela-de-precos">
@@ -44,7 +42,9 @@
         </div> -->
 
         <div id="input-container">
+
             <form action="Dashboard adm.html" method="GET">
+                <p class="form-titulo">Especificações do Evento</p><br>
 
                 <label for="tipo-de-evento">Tipo de Evento: *</label>
                 <select id="tipo-de-evento">
@@ -67,27 +67,60 @@
                     <option value="publico" required>Público</option>
                     <option value="privado">Privado</option>
                 </select>
-                <label for="qtd">Qtd. estimada de convidados: *</label>
-                <input type="number" id="qtd" maxlength="150">
+                <label for="qtd">Quantidade estimada de convidados: *</label>
+                <input type="number" id="qtd" min="1" max="150" placeholder="De 0 à 150 convidados">
 
                 <label for="data-evento">Data do Evento: *</label>
                 <input type="date" id="data-evento" required>
 
 
                 <div>
-                    <p>Serviços Adicionais<br>(Aumenta o orçamento):</p><br>
-                    <input type="checkbox" id="servicos-adc" name="som" value="Equipamento de Som">
-                    <label for="som">Equipamento de Som</label>
+                    <p>Serviços Adicionais<br><i>(Aumenta o orçamento)</i>:</p><br>
+                    <input type="checkbox" id="som" name="som" value="Equipamento de Som">
+                    <label class="radio-checkbox" for="som">Equipamento de Som</label>
 
-                    <input type="checkbox" id="servicos-adc" name="luz" value="Iluminação">
-                    <label for="luz">Iluminação</label><br>
-
-                    <input type="submit" id="bt-enviar" value="Prosseguir">
+                    <input type="checkbox" id="luz" name="luz" value="Iluminação">
+                    <label class="radio-checkbox" for="luz">Iluminação</label><br>
                 </div>
+                <label for="descricao-evento">Descrição do Evento:*</label>
+                <textarea id="descricao-evento" rows="5" maxlength="500" required></textarea>
+
+                <div>
+                    <p>Permitir visibilidade do seu evento na programação (agenda) do site?</p>
+                    <input type="radio" id="sim" name="termos" required>
+                    <label class="radio-checkbox" for="sim">Sim</label>
+
+                    <input type="radio" id="nao" name="termos">
+                    <label class="radio-checkbox" for="nao">Não</label><br>
+                </div>
+                
+                <p>Banner do evento: <i>(Opcional)</i></p>
+                <input type="file" name="foto" accept="image/*"><Br>
+
+
+                <div>
+                    <label for="termos">Termos de uso do espaço:*</label><br>
+                    <textarea class="termos" rows="6"
+                        disabled>Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa a levantar dúvidas sobre a realidade. E quando encontra os misteriosos Morpheus e Trinity, ele descobre que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</textarea><br>
+
+                        <input type="radio" id="termo-aceito" name="termos" required>
+                        <label for="termo-aceito">Aceito os termos de uso.</label>
+
+                        <input type="radio" id="termo-recusado" name="termos">
+                        <label for="termo-recusado">Não aceito os termos de uso.</label>
+                    </div>
+                    <br><br>
+
+                    <p class="form-titulo">Formas de Pagamento</p>
+
+                    <div>
+                        <input type="submit" id="bt-enviar" value="Solicitar Agendamento">
+                    </div>
             </form>
         </div>
-        <p class="divisoria-rodape"></p>
+        
     </main>
+    <p class="divisoria-rodape"></p>
     <footer>
         <div class="rodape">
             <div class="rodape-img">

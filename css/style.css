@@ -309,6 +309,16 @@ body {
     display: flex;
     justify-content: center;
 }
+#input-container-centro {
+    display: flex;
+    justify-content: center;
+}
+#faq {
+    width: 30em;
+}
+#login {
+    width: 23em;
+}
 form {
     /* background-image: url(../Img/Janela\ generica.svg);
     background-size: cover; */
@@ -317,25 +327,59 @@ form {
     border-top-right-radius: 5em;
     margin: 1em;
     padding: 3em 1em 1em;
-    font-weight: bold;
     display:flex;
     flex-direction: column;
+    width: 80%;
+}
+form .form-titulo {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: bold;
 }
 textarea#termos {
     overflow: scroll;
 }
+textarea {
+    color: #000;
+    margin-bottom: 1em;
+    width: 100%;
+}
 #tabela-de-precos {
     display: flex; 
+}
+label {
+    font-weight: bold;
 }
 input {
     margin-bottom: 1em;
 }
+.radio-checkbox {
+    font-weight: normal;
+}
+form #senha-login {
+    margin-bottom:0em;
+}
+form a {
+    font-weight: normal;
+}
+input:focus, textarea:focus {
+    background-color: #eee;
+}
 select {
     margin-bottom: 1em;
 }
-#bt-enviar {
-    display:flex;
-    justify-content: flex-end;
+form #bt-enviar {
+    padding: .8em;
+    border-radius: 1em;
+    border:none;
+    margin: 1em 0;
+    cursor: pointer;
+    background-color: #5E64D1;
+}
+
+form p {
+    font-weight: bold;
 }
 /*------------------------------------------------------------------------------------*/
 
@@ -522,6 +566,17 @@ table {
     td {
         font-size: 1.5em;
         font-weight: bold;
+    }
+    .plantas-top {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .plantas-bottom {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+       
     }
     /*Fechamento @media abaixo*/
 }
