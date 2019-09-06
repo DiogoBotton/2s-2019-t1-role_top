@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="36" viewBox="0 0 42 36">
+  <defs>
+    <clipPath id="clip-Botão_fechar">
+      <rect width="42" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="Botão_fechar" data-name="Botão fechar" clip-path="url(#clip-Botão_fechar)">
+    <g id="Retângulo_74" data-name="Retângulo 74" transform="translate(-0.351 -0.376)" fill="#fff" stroke="#000" stroke-width="1">
+      <rect width="42.562" height="35.842" rx="4" stroke="none"/>
+      <rect x="0.5" y="0.5" width="41.562" height="34.842" rx="3.5" fill="none"/>
+    </g>
+    <path id="Caminho_75" data-name="Caminho 75" d="M4803.523,276.37l15.283-15.283,3.016,3.015-15.075,15.074Z" transform="translate(-4791.499 -252.307)" stroke="#000" stroke-width="1"/>
+    <path id="Caminho_76" data-name="Caminho 76" d="M4803.523,264.5l14.5,14.5,3.417-3.416-14.337-14.337Z" transform="translate(-4791.499 -252.105)" stroke="#000" stroke-width="1"/>
+  </g>
+</svg>

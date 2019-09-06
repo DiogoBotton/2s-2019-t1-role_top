@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="492" height="60" viewBox="0 0 492 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9898ff"/>
+      <stop offset="1" stop-color="#4c4c80"/>
+    </linearGradient>
+    <clipPath id="clip-titulo_calendário">
+      <rect width="492" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="titulo_calendário" data-name="titulo calendário" clip-path="url(#clip-titulo_calendário)">
+    <path id="Caminho_16" data-name="Caminho 16" d="M-362.259,241.334l91.152-58.621H37.2l91.152,58.621Z" transform="translate(362.947 -182)" fill="url(#linear-gradient)"/>
+    <text id="Calendário" transform="translate(9.732 9.057)" fill="#242424" stroke="#242424" stroke-width="1" font-size="35" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="146.069" y="32">Calendário</tspan></text>
+  </g>
+</svg>

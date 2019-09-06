@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="572" height="63" viewBox="0 0 572 63">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9898ff"/>
+      <stop offset="1" stop-color="#4c4c80"/>
+    </linearGradient>
+    <clipPath id="clip-Estrutura_do_espaco">
+      <rect width="572" height="63"/>
+    </clipPath>
+  </defs>
+  <g id="Estrutura_do_espaco" data-name="Estrutura do espaco" clip-path="url(#clip-Estrutura_do_espaco)">
+    <path id="Caminho_1" data-name="Caminho 1" d="M-362.259,246.348l106.212-63.635H103.2l106.212,63.635Z" transform="translate(362.259 -183)" fill="url(#linear-gradient)"/>
+    <text id="Estrutura_do_espaço" data-name="Estrutura do espaço" transform="translate(75.802 12.512)" fill="#242424" stroke="#242424" stroke-width="1" font-size="35" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="40.788" y="32">Estrutura do espaço</tspan></text>
+  </g>
+</svg>

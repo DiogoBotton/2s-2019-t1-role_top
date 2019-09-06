@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="28" viewBox="0 0 190 28">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c99c00"/>
+      <stop offset="1" stop-color="#ffc400"/>
+    </linearGradient>
+    <clipPath id="clip-titulo_programacao">
+      <rect width="190" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="titulo_programacao" data-name="titulo programacao" clip-path="url(#clip-titulo_programacao)">
+    <path id="Caminho_9" data-name="Caminho 9" d="M489.615,651.951l15.254-28h155l18.7,28Z" transform="translate(-489 -624)" fill="url(#linear-gradient)"/>
+    <text id="ProgramacAo" transform="translate(5)" font-size="18" font-family="BayouCowboy, Bayou Cowboy"><tspan x="12.798" y="21">ProgramacAo</tspan></text>
+  </g>
+</svg>

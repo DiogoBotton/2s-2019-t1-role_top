@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rolê TOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+
+
+        <!--Input e label para dar ao site a funcionalidade de design responsivo-->
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"><img src="Img/menu opcoes.png" height="67px"></label>
+
+        <div class="bg-mobile"></div>
+        <div class="barra">
+            <nav class="menu">
+                <ul>
+                    <img src="Img/Logo role top.png" class="logo">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Estrutura.html">Estrutura</a></li>
+                    <li><a href="Programacao.html">Programação</a></li>
+                    <li><a href="Agende Aqui.html">Agende Aqui</a></li>
+                    <li><a href="Perguntas frequentes.html">Perguntas Frequentes</a></li>
+                    <li><a href="Cadastro.html">Cadastre-se</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <img src="Img/titulo cadastro.svg">
+        </div>
+
+        <div id="input-container">
+            <form action="Dashboard adm.html" method="GET">
+                <label for="nome">Nome:*</label>
+                <input type="text" id="nome" autofocus required>
+
+                <label for="email">Email:*</label>
+                <input type="email" id="email" placeholder="email@gmail.com" required>
+
+                <label for="senha">Senha *</label>
+                <input type="password" id="senha" required minlength="8">
+
+                <label for="confirm-senha">Confirmar Senha *</label>
+                <input type="password" id="confirm-senha" required minlength="8">
+
+                <label for="cep">CEP *</label>
+                <input type="text" id="cep" required maxlength="8">
+
+                <label for="cpf-cnpj">CPF/CNPJ *</label>
+                <input type="text" id="cpf-cnpj" required maxlength="14">
+
+                <label for="tel-cel">Tel/Cel *</label>
+                <input type="tel" id="tel-cel" required maxlength="11" placeholder="(11) _ _ _ _ - _ _ _ _"><br>
+
+
+
+
+                <label for="termos">Termos de uso:</label>
+                <textarea class="termos" rows="6" cols="35"
+                    disabled>A compreensão de um texto é a análise e decodificação do que está realmente escrito, seja das frases ou das ideias presentes. Já a interpretação de texto, está ligada às conclusões que podemos chegar ao conectar as ideias do texto com a realidade. É o entendimento subjetivo que o leitor teve sobre o texto. Nas favelas, no Senado Sujeira pra todo lado Ninguém respeita a Constituição Mas todos acreditam no futuro da nação Que país é esse?Que país é esse?Que país é esse?No Amazonas, no Araguaia iá, iá Na Baixada Fluminense Mato Grosso, Minas Gerais E no Nordeste tudo em paz Na morte eu descanso Mas o sangue anda solto Manchando os papéis, documentos fiéis Ao descanso do patrão Que país é esse?</textarea><br>
+                <div>
+
+                    <input type="radio" id="termo-aceito" name="termos" required>
+                    <label for="termo-aceito">Aceito os termos de uso.</label>
+
+                    <input type="radio" id="termo-recusado" name="termos">
+                    <label for="termo-recusado">Não aceito os termos de uso.</label>
+
+                    <input type="submit" id="bt-enviar" value="Cadastrar-me">
+                </div>
+            </form>
+        </div>
+        <p class="divisoria-rodape"></p>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="rodape-img">
+
+                <div>
+                    <img src="Img/Logo role top.png" class="logo">
+                </div>
+                <div>
+                    <img src="Img/whatsapp.png" usemap="#whatsapp">
+                    <map name="whatsapp">
+                        <area shape="rect" coords="112,37,266,57"
+                            href="https://api.whatsapp.com/send?phone=55111234-5678" target="_blank">
+                        <area shape="rect" coords="111,62,264,78"
+                            href="https://api.whatsapp.com/send?phone=55114098-7654" target="_blank">
+                    </map>
+                </div>
+            </div>
+        </div>
+        <p class="divisoria-rodape"></p>
+        <div class="rodape-meio">
+            <div>
+                <p>Localização</p>
+                <p>Alameda Barão de Limeira,539 - Santa Cecilia,<br> São Paulo - SP, 01202-001</p>
+            </div>
+            <div>
+                <p>Email</p>
+                <p>roletop@gmail.com</p>
+            </div>
+            <div>
+                <p>Funcionamento</p>
+                <p>Quinta à Domingo - 20h às 05h</p>
+            </div>
+        </div>
+        <div class="rodape-fim">
+            <div>
+                <p>@ Rolê Top 2019</p>
+            </div>
+            <div>
+                <p>® Todos os direitos reservados</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

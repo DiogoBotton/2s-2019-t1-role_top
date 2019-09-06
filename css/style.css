@@ -1,0 +1,591 @@
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Reset----------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: lovelo-light;
+    src: url(../Fontes/Lovelo-LineLight.woff);
+}
+
+@font-face {
+    font-family: bayoc;
+    src: url(../Fontes/bayoc___-webfont.woff);
+}
+.space {
+    margin: 1em;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*----------------------------------------Cabeçalho-----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+body {
+    background-image: linear-gradient(to bottom, rgba(58, 58, 255, 0.30), rgba(175, 175, 233, 0.30), rgba(0, 0, 201, 0.30));
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 9.3em;
+}
+.space-banner {
+    padding: 7em;
+}
+
+.banner-area {
+    background-image: url(../Img/Img\ banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.banner-area a {
+    font-size: 2em;
+    color: #fff;
+    font-family: lovelo-light;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0);
+    padding: 1em;
+    text-shadow: -3px -3px 4px #0004ff, 3px -3px 4px #0004ff, 3px 3px 4px #0004ff, 3px 3px 4px #0004ff;
+    transition: all .2s;
+}
+
+.banner-area a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Menu-----------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+.menu {
+    background: linear-gradient(to bottom, #000440, #5E64D1, #000880);
+    padding: .5em;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #361a0c;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 10px;
+    background: #000764;
+    padding: 15px;
+    color: white;
+    margin: 0px 5px 0px 5px;
+    border-radius: 20px;
+    transition: all .4s;
+}
+
+.menu a:hover {
+    background: #5E64D1;
+}
+
+/*.menu {
+    width: 100%;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: absolute;
+    top: 75px;
+    left: 180px;
+}
+
+.menu ul li {
+    float: left;
+    width: 140px;
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(to bottom left, #000440, #000880);
+    color: white;
+    margin: 0px 5px 0px 5px;
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background: linear-gradient(to top, #000880, #5E64D1);
+}*/
+
+/*Icone e checkbox do menu MOBILE em none para não aparecer na WEB*/
+
+#icone {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*-------------------------------------Sobre Nós--------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+#sobrenos p:nth-child(odd) {
+    text-align: center;
+    font-size: 2em;
+    font-family: bayoc;
+    margin: 3em;
+    text-decoration: underline;
+}
+
+#sobrenos p:nth-child(even) {
+    margin: 0 2em 5em 2em;
+}
+
+#sobrenos {
+    border-bottom: 1px solid #B4B4B4;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*----------------------------------Programação HOME----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+#programacaohome {
+    text-align: center;
+    font-family: bayoc;
+    font-size: 2em;
+    width: 100%
+}
+.programacao {
+    border: 2em solid transparent;
+    border-image: url(../Img/Programação\ barra1.png) 64;
+}
+
+.clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------Localização-------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+#localizacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: bayoc;
+    font-size: 2em;
+    width: 100%;
+    border-top: 1px solid #B4B4B4;
+}
+
+#localizacao p {
+    margin: 1em
+}
+
+#localizacao iframe {
+    width: 80%;
+    height: 12em;
+    display: flex;
+    align-self: center;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Rodapé---------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+.divisoria-rodape {
+    border-bottom: 1px solid #000;
+    padding: 2em;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.rodape-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape-meio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.rodape-meio>div>p:nth-child(odd) {
+    font-weight: bold;
+    font-size: 2em;
+}
+.rodape-meio>div>p:nth-child(even) {
+    font-weight: bold;
+}
+
+.rodape-fim {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#4C52B4, #00076A, #5E64D1);
+    color: #fff;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Estrutura------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+.titulo {
+    text-align: center;
+    margin: 1em auto;
+    font-weight: bold;
+}
+.titulo-duvida {
+    text-align: center;
+    margin:1em auto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.plantas-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.plantas-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------Input's GERAIS----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+#input-container {
+    display: flex;
+    justify-content: center;
+}
+form {
+    /* background-image: url(../Img/Janela\ generica.svg);
+    background-size: cover; */
+    background: linear-gradient(to bottom, #FFBC65,#F1C93E);
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    margin: 1em;
+    padding: 3em 1em 1em;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+}
+textarea#termos {
+    overflow: scroll;
+}
+#tabela-de-precos {
+    display: flex; 
+}
+input {
+    margin-bottom: 1em;
+}
+select {
+    margin-bottom: 1em;
+}
+#bt-enviar {
+    display:flex;
+    justify-content: flex-end;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------Perguntas Frequentes-------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+.perguntas {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 60%;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.perguntas summary {
+    background-color: #4C52B4;
+    border-radius: .4em;
+    text-align: center;
+}
+.perguntas details {
+    background-color: #8385ff;
+    border-radius: .4em;    
+}
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------Gerencimento de eventos-------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+table {
+    border: 1px solid #000;
+}
+.titulo-adm {
+    background: linear-gradient( to bottom, #858CFF, #474CB7);
+    padding: 1.1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em 1em 0;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+    border: 1px solid #000;
+}
+
+.eventos {
+    background: #B3AEFF;
+    margin: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos tr {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.eventos td {
+    text-align: center;
+    width: 100%;
+}
+
+.eventos th {
+    border: 1px solid #000;
+    width: 100%;
+    
+}
+/*------------------------------------------------------------------------------------*/
+
+/*-------------------------------Mensagens de usuários--------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+.mensagens {
+    background: #B3AEFF;
+    margin: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagens tr {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+    
+}
+.mensagens td {
+    text-align: center;
+    width: 100%;
+}
+
+.mensagens th {
+    border: 1px solid #000;
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Responsivo-----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+@media (max-width:1019px) {
+    .bg-mobile {
+        background: linear-gradient(to bottom, #000440, #5E64D1, #000880);
+        height: 5em;
+    }
+    /*------------------Menu Retrátil--------------------*/
+    #check {
+        display: none;
+    }
+    #icone {
+        cursor: pointer;
+        position: fixed;
+        display: block;
+        top: .5em;
+        right: 10px;
+        z-index: 2;
+    }
+    .menu {
+        background: linear-gradient(to bottom, #00044000, rgba(94, 100, 209, 0), #00098000);
+    }
+    .barra {
+        background: linear-gradient(to bottom, rgba(58, 58, 255, 0.30), rgba(175, 175, 233, 0.30), rgba(0, 0, 201, 0.30));
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        transition: all .2s linear;
+        left: -100%;
+        z-index: 1;
+        top:0px;
+    }
+    .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        z-index: 1;
+    }
+    .menu ul li {
+        width: 21.8em;
+        margin: 0.5em;
+        
+    }
+    .menu a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        padding: .9em;
+        background: white;
+        color: black;
+        border-radius: 0px;
+        box-shadow: .5em .5em .5em black;
+    }
+    .menu>ul>a:nth-child(1) {
+        border: none;
+        padding: 0px;
+    }
+    .menu a:hover {
+        background: #b8b8b8;
+    }
+    #check:checked~.barra {
+        transform: translateX(100%);
+    }
+    /*-------Rodapé-------*/
+    .rodape-meio {
+        display: flex;
+        justify-content: column;
+    }
+    .rodape-meio>div>p:nth-child(odd) {
+        font-size: 3em;
+    }
+    .rodape-meio>div>p:nth-child(even) {
+        font-size: 1.3em;
+    }
+    /*-----Tabela Admin-----*/
+    th {
+        font-size: 2em;
+    }
+    td {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    /*Fechamento @media abaixo*/
+}
+@media (max-width: 900px){ 
+    .rodape-meio {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5em;
+        
+    }
+    .rodape-meio>div>p:nth-child(odd) {  
+        font-size: 1.5em;
+    }
+    .rodape-meio>div>p:nth-child(even) {
+        font-weight: none;  
+        font-size: .9em;
+    }
+    /*-----Tabela Admin-----*/
+    th {
+        font-size: 1.2em;
+    }
+    td {
+        font-size: 1em;
+    }
+}
+@media (max-width: 600px) {
+    .banner-area a {
+        font-size: 1.5em;
+    }
+    /*-----Tabela Admin-----*/
+    th {
+        font-size: 1em;
+    }
+    td {
+        font-size: .8em;
+    }
+    .titulo-adm {
+        padding: .5em;
+        margin: 0 .1em;
+    }
+    .eventos {
+        margin: 0 .1em;
+    }
+    .mensagens {
+        margin: 0 .1em;
+    }
+}
+@media (max-width: 400px) {
+    .menu ul li {
+        width: 15em;
+        margin: 0.3em;   
+    }
+    .banner-area a {
+        font-size: 1em;
+    }
+    /*-----Tabela Admin-----*/
+    th {
+        font-size: .7em;
+    }
+    td {
+        font-size: .6em;
+        
+    }
+}
+
+/* menu de navegação mobile (aumentar apartir de 400 px)*/

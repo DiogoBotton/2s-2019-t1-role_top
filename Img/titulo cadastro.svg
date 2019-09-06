@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="369" height="69" viewBox="0 0 369 69">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9898ff"/>
+      <stop offset="1" stop-color="#4c4c80"/>
+    </linearGradient>
+    <clipPath id="clip-titulo_cadastro">
+      <rect width="369" height="69"/>
+    </clipPath>
+  </defs>
+  <g id="titulo_cadastro" data-name="titulo cadastro" clip-path="url(#clip-titulo_cadastro)">
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(-14 -153)">
+      <path id="Caminho_16" data-name="Caminho 16" d="M-362.259,251.086l68.372-68.372H-62.627L5.745,251.086Z" transform="translate(376.536 -29.714)" fill="url(#linear-gradient)"/>
+      <text id="Cadastro" transform="translate(73.606 164.921)" fill="#242424" stroke="#242424" stroke-width="1" font-size="35" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="49.813" y="32">Cadastro</tspan></text>
+    </g>
+  </g>
+</svg>

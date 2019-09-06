@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="578" height="60" viewBox="0 0 578 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9898ff"/>
+      <stop offset="1" stop-color="#4c4c80"/>
+    </linearGradient>
+    <clipPath id="clip-titulo_agendamento">
+      <rect width="578" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="titulo_agendamento" data-name="titulo agendamento" clip-path="url(#clip-titulo_agendamento)">
+    <path id="Caminho_16" data-name="Caminho 16" d="M-362.259,241.334l107.085-58.621h362.2l107.086,58.621Z" transform="translate(362.947 -182)" fill="url(#linear-gradient)"/>
+    <text id="Agendamento" transform="translate(52.732 9.057)" fill="#242424" stroke="#242424" stroke-width="1" font-size="35" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="119.836" y="32">Agendamento</tspan></text>
+  </g>
+</svg>

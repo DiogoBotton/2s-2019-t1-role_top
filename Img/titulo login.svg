@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="369" height="69" viewBox="0 0 369 69">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9898ff"/>
+      <stop offset="1" stop-color="#4c4c80"/>
+    </linearGradient>
+    <clipPath id="clip-titulo_login">
+      <rect width="369" height="69"/>
+    </clipPath>
+  </defs>
+  <g id="titulo_login" data-name="titulo login" clip-path="url(#clip-titulo_login)">
+    <path id="Caminho_1" data-name="Caminho 1" d="M-362.259,251.086l68.372-68.372H-62.627L5.745,251.086Z" transform="translate(362.536 -182.714)" fill="url(#linear-gradient)"/>
+    <text id="Fazer_login" data-name="Fazer login" transform="translate(59.606 11.921)" fill="#242424" stroke="#242424" stroke-width="1" font-size="35" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="33.296" y="32">Fazer login</tspan></text>
+  </g>
+</svg>
