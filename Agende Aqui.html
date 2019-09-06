@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <title>Rolê TOP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -43,7 +47,7 @@
 
         <div id="input-container">
 
-            <form action="Dashboard adm.html" method="GET">
+            <form action="Resumo de compra.html" method="GET">
                 <p class="form-titulo">Especificações do Evento</p><br>
 
                 <label for="tipo-de-evento">Tipo de Evento: *</label>
@@ -86,14 +90,14 @@
                 <textarea id="descricao-evento" rows="5" maxlength="500" required></textarea>
 
                 <div>
-                    <p>Permitir visibilidade do seu evento na programação (agenda) do site?</p>
-                    <input type="radio" id="sim" name="termos" required>
+                    <p>Permitir visibilidade do seu evento na programação (agenda) do site? *</p>
+                    <input type="radio" id="sim" name="termos">
                     <label class="radio-checkbox" for="sim">Sim</label>
 
                     <input type="radio" id="nao" name="termos">
                     <label class="radio-checkbox" for="nao">Não</label><br>
                 </div>
-                
+
                 <p>Banner do evento: <i>(Opcional)</i></p>
                 <input type="file" name="foto" accept="image/*"><Br>
 
@@ -103,22 +107,42 @@
                     <textarea class="termos" rows="6"
                         disabled>Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa a levantar dúvidas sobre a realidade. E quando encontra os misteriosos Morpheus e Trinity, ele descobre que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</textarea><br>
 
-                        <input type="radio" id="termo-aceito" name="termos" required>
-                        <label for="termo-aceito">Aceito os termos de uso.</label>
+                    <input type="radio" id="termo-aceito" name="termos" required>
+                    <label for="termo-aceito">Aceito os termos de uso.</label>
 
-                        <input type="radio" id="termo-recusado" name="termos">
-                        <label for="termo-recusado">Não aceito os termos de uso.</label>
+                    <input type="radio" id="termo-recusado" name="termos">
+                    <label for="termo-recusado">Não aceito os termos de uso.</label>
+                </div>
+                <br><br>
+
+                <p class="form-titulo">Formas de Pagamento</p>
+                <div class="section-pagamento">
+
+
+                    <div class="icones">
+                        <p>Cartão de débito/crédito:</p>
+                        <input type="radio" id="paypal" name="cartao">
+                        <label for="paypal"><i class="fab fa-cc-paypal"></i></label>
+
+                        <input type="radio" id="mastercard" name="cartao">
+                        <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
+
+                        <input type="radio" id="visa" name="cartao">
+                        <label for="visa"><i class="fab fa-cc-visa"></i></label>
                     </div>
-                    <br><br>
-
-                    <p class="form-titulo">Formas de Pagamento</p>
-
-                    <div>
-                        <input type="submit" id="bt-enviar" value="Solicitar Agendamento">
+                    <div class="boleto">
+                        <p>Boleto:</p>
+                        <input type="radio" id="boleto" name="cartao">
+                        <label for="boleto"><img src="Img/boleto.svg"></label>
                     </div>
+                </div>
+
+                <div>
+                    <input type="submit" id="bt-enviar" value="Solicitar Agendamento">
+                </div>
             </form>
         </div>
-        
+
     </main>
     <p class="divisoria-rodape"></p>
     <footer>

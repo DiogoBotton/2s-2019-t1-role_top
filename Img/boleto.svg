@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="48" viewBox="0 0 70 48">
+  <defs>
+    <clipPath id="clip-boleto">
+      <rect width="70" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="boleto" clip-path="url(#clip-boleto)">
+    <g id="Agrupar_16" data-name="Agrupar 16" transform="translate(-244 -412)">
+      <g id="Retângulo_41" data-name="Retângulo 41" transform="translate(244 412)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="70" height="48" rx="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="69" height="47" rx="2.5" fill="none"/>
+      </g>
+      <path id="Caminho_35" data-name="Caminho 35" d="M2035.979,452.552V419.974h1.357v32.578Z" transform="translate(-1788)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_52" data-name="Caminho 52" d="M2035.979,452.552V419.974h1.357v32.578Z" transform="translate(-1727)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_36" data-name="Caminho 36" d="M2040,438.41V419.722h1.31V438.41Z" transform="translate(-1788)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_51" data-name="Caminho 51" d="M2040,438.41V419.722h1.31V438.41Z" transform="translate(-1734)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_46" data-name="Caminho 46" d="M2040,438.41V419.722h1.31V438.41Z" transform="translate(-1750)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_49" data-name="Caminho 49" d="M2040,438.41V419.722h1.31V438.41Z" transform="translate(-1740)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_37" data-name="Caminho 37" d="M2040,438.41V419.722h1.788V438.41Z" transform="translate(-1784)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_38" data-name="Caminho 38" d="M2040,438.41V419.722h1.268V438.41Z" transform="translate(-1780)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_39" data-name="Caminho 39" d="M2040,438.41V419.722h1.213V438.41Z" transform="translate(-1776)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_40" data-name="Caminho 40" d="M2040,438.41V419.722h1.788V438.41Z" transform="translate(-1772)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_41" data-name="Caminho 41" d="M2040,438.41V419.722h1.1V438.41Z" transform="translate(-1768)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_50" data-name="Caminho 50" d="M2040,438.41V419.722h1.1V438.41Z" transform="translate(-1737)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_47" data-name="Caminho 47" d="M2040,438.41V419.722h1.1V438.41Z" transform="translate(-1746)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_42" data-name="Caminho 42" d="M2040,438.41V419.722h1.788V438.41Z" transform="translate(-1764)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_45" data-name="Caminho 45" d="M2040,438.41V419.722h1.788V438.41Z" transform="translate(-1754)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_43" data-name="Caminho 43" d="M2040,438.41V419.722h1.264V438.41Z" transform="translate(-1760)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_44" data-name="Caminho 44" d="M2040,438.41V419.722h1.264V438.41Z" transform="translate(-1757)" stroke="#000" stroke-width="1"/>
+      <path id="Caminho_48" data-name="Caminho 48" d="M2040,438.41V419.722h1.264V438.41Z" transform="translate(-1743)" stroke="#000" stroke-width="1"/>
+      <text id="Boleto-2" data-name="Boleto" transform="translate(255 438)" font-size="13" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="4.78" y="12">Boleto</tspan></text>
+    </g>
+  </g>
+</svg>

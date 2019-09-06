@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolê TOP (Modo Admin)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 
 <body>
@@ -32,5 +34,100 @@
     </header>
 
 </body>
+<main>
+    <div id="input-container">
+        <div class="resumo-adm">
+            <div>
+                <p class="titulo-resumo">Nome da Empresa/Cliente</p>
+            </div>
+            <form action="Resumo de compra.html" method="GET">
+                <p class="form-titulo">Especificações do Evento</p><br>
+
+                <label for="tipo-de-evento">Tipo de Evento: *</label>
+                <select id="tipo-de-evento">
+                    <option value="" disabled selected></option>
+                    <option value="Aniversário">Aniversário</option>
+                    <option value="Casamento">Casamento</option>
+                    <option value="Formatura">Formatura</option>
+                    <option value="Despedidas">Despedidas</option>
+                    <option value="Noivado">Noivado</option>
+                    <option value="Final de Ano">Final de Ano</option>
+                    <option value="Palestra">Palestra</option>
+                    <option value="Show">Show</option>
+                    <option value="Exposição">Exposição</option>
+                    <option value="Jogos">Jogos</option>
+                </select>
+
+                <label for="privacidade">Evento aberto ao público / privado: *</label>
+                <select id="privacidade">
+                    <option value="" disabled selected></option>
+                    <option value="publico" required>Público</option>
+                    <option value="privado">Privado</option>
+                </select>
+                <label for="qtd">Quantidade estimada de convidados: *</label>
+                <input type="number" id="qtd" min="1" max="150" placeholder="De 0 à 150 convidados">
+
+                <label for="data-evento">Data do Evento: *</label>
+                <input type="date" id="data-evento" required>
+
+
+                <div>
+                    <p>Serviços Adicionais<br><i>(Aumenta o orçamento)</i>:</p><br>
+                    <input type="checkbox" id="som" name="som" value="Equipamento de Som" disabled>
+                    <label class="radio-checkbox" for="som">Equipamento de Som</label>
+
+                    <input type="checkbox" id="luz" name="luz" value="Iluminação" disabled>
+                    <label class="radio-checkbox" for="luz">Iluminação</label><br>
+                </div>
+                <label for="descricao-evento">Descrição do Evento:*</label>
+                <textarea id="descricao-evento" rows="5" maxlength="500" required
+                    disabled>Descrição do evento pelo cliente</textarea>
+
+                <div>
+                    <p>Permitir visibilidade do seu evento na programação (agenda) do site? *</p>
+                    <input type="radio" id="sim" name="termos" disabled>
+                    <label class="radio-checkbox" for="sim">Sim</label>
+
+                    <input type="radio" id="nao" name="termos" disabled>
+                    <label class="radio-checkbox" for="nao">Não</label><br>
+                </div>
+                <br><br>
+
+                <p class="form-titulo">Formas de Pagamento</p>
+                <div class="section-pagamento-adm">
+
+
+                    <div class="icones-adm">
+                        <p>Cartão de débito/crédito:</p>
+
+                        <input type="radio" id="paypal" name="cartao">
+                        <label for="paypal"><i class="fab fa-cc-paypal"></i></label>
+
+                        <input type="radio" id="mastercard" name="cartao">
+                        <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
+
+                        <input type="radio" id="visa" name="cartao">
+                        <label for="visa"><i class="fab fa-cc-visa"></i></label>
+                    </div>
+                    
+                    <div class="boleto-adm">
+                        <p>Boleto:</p>
+                        <input type="radio" id="boleto" name="cartao">
+                        <label for="boleto"><img src="Img/boleto.svg"></label>
+                    </div>
+                </div>
+
+            </form>
+            <div class="btn">
+                <a href="Dashboard adm.html"><button>Aceitar</button></a>
+
+                <a href="Dashboard adm.html"><button>Recusar</button></a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
 
 </html>

@@ -75,7 +75,7 @@ body {
 /*------------------------------------------------------------------------------------*/
 
 .menu {
-    background: linear-gradient(to bottom, #000440, #5E64D1, #000880);
+    background: linear-gradient(to bottom,#000440, #5E64D1, #000880);
     padding: .5em;
 }
 
@@ -332,7 +332,7 @@ form {
     width: 80%;
 }
 form .form-titulo {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 1em;
     font-weight: bold;
@@ -383,6 +383,125 @@ form p {
 }
 /*------------------------------------------------------------------------------------*/
 
+/*--------------------------------------Agendamento-----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+.fab {
+    font-size: 4em;
+    margin: .5em;
+    cursor: pointer;
+}
+.section-pagamento {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.boleto img {
+    margin: 2em;
+    width: 6em;
+    cursor: pointer
+}
+.boleto {
+    text-align: center;
+}
+.section-pagamento p {
+    font-size: 1.2em;
+}
+#paypal,#mastercard,#visa,#boleto {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*----------------------------------Resumo de compra----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+.resumo {
+    background: linear-gradient(to bottom, #FFBC65,#F1C93E);
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    width: 30em;
+}
+.resumo table {
+    margin-top: 1em;
+}
+.resumo table td, th {
+    border: 1px solid #000;
+    font-size: 1.2em;
+}
+.titulo-resumo {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 8px #000;
+    margin-top: 1em;
+    text-align: center;
+}
+.resumo ul {
+    list-style: none;
+}
+.resumo ul li {
+    margin: 1.5em;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.resumo button {
+    border-radius: 1em;
+    border:none;
+    width: 10em;
+    padding: .8em;
+    margin: 1em;
+    cursor: pointer;
+}
+.info-resumo {
+    margin: 1em;
+    font-size: .8em;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*---------------------------------Informações de evento (Admin)-------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+.section-pagamento-adm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.resumo-adm {
+    background: linear-gradient(to bottom, #FFBC65,#F1C93E);
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    width: 30em;
+}
+.resumo-adm button {
+    border-radius: 1em;
+    border:none;
+    width: 10em;
+    padding: .8em;
+    margin: 1em;
+    cursor: pointer;
+}
+.icones-adm .fab {
+    font-size:2em;
+}
+.boleto-adm img {
+    width:5em;
+}
+
+/*------------------------------------------------------------------------------------*/
+
 /*---------------------------------Perguntas Frequentes-------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
@@ -408,9 +527,6 @@ form p {
 /*------------------------------Gerencimento de eventos-------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
-table {
-    border: 1px solid #000;
-}
 .titulo-adm {
     background: linear-gradient( to bottom, #858CFF, #474CB7);
     padding: 1.1em;
@@ -427,6 +543,7 @@ table {
     margin: 0 1.5em;
     display: flex;
     flex-direction: column;
+    border: 1px solid #000;
 }
 
 .eventos tr {
@@ -560,10 +677,10 @@ table {
         font-size: 1.3em;
     }
     /*-----Tabela Admin-----*/
-    th {
+    .eventos th {
         font-size: 2em;
     }
-    td {
+    .eventos td {
         font-size: 1.5em;
         font-weight: bold;
     }
@@ -577,6 +694,12 @@ table {
         justify-content: space-evenly;
         flex-direction: column;
        
+    }
+    .resumo {
+        width: 30em;
+    }
+    .resumo-adm {
+        width: 30em;
     }
     /*Fechamento @media abaixo*/
 }
@@ -602,6 +725,12 @@ table {
     td {
         font-size: 1em;
     }
+    .resumo {
+        width: 30em;
+    }
+    .resumo-adm {
+        width: 30em;
+    }
 }
 @media (max-width: 600px) {
     .banner-area a {
@@ -624,6 +753,36 @@ table {
     .mensagens {
         margin: 0 .1em;
     }
+    .resumo {
+        width: 20em;
+    }
+    .resumo-adm {
+        width: 25em;
+    }
+    .resumo button {
+        border-radius: 1em;
+        border:none;
+        width: 8em;
+        margin: 1em;
+    }
+    .resumo-adm button {
+        border-radius: 1em;
+        border:none;
+        width: 8em;
+        margin: 1em;
+    }
+    .section-pagamento {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-pagamento-adm {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 @media (max-width: 400px) {
     .menu ul li {
@@ -634,12 +793,32 @@ table {
         font-size: 1em;
     }
     /*-----Tabela Admin-----*/
-    th {
+    .eventos th {
         font-size: .7em;
     }
-    td {
+    .eventos td {
         font-size: .6em;
-        
+    }
+    .resumo {
+        width: 15em;
+    }
+    .resumo p {
+        margin-top: 1.5em;
+    }
+    .resumo button {
+        border-radius: 1em;
+        border:none;
+        width: 6em;
+        margin: 1em;
+    }
+    .resumo-adm {
+        width: 18em;
+    }
+    .resumo-adm button {
+        border-radius: 1em;
+        border:none;
+        width: 6em;
+        margin: 1em;
     }
 }
 
