@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rolê TOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+
+
+        <!--Input e label para dar ao site a funcionalidade de design responsivo-->
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"><img src="Img/menu opcoes.png" height="67px"></label>
+
+        <div class="bg-mobile"></div>
+        <div class="barra">
+            <nav class="menu">
+                <ul>
+                    <img src="Img/Logo role top.png" class="logo">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Estrutura.html">Estrutura</a></li>
+                    <li><a href="Programacao.html">Programação</a></li>
+                    <li><a href="Agende Aqui.html">Agende Aqui</a></li>
+                    <li><a href="Perguntas frequentes.html">Perguntas Frequentes</a></li>
+                    <li><a href="Cadastro.html">Cadastre-se</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="resumo-adm">
+        <form class="form-msg-adm">
+            <div>
+                <p class="titulo-resumo"> Nome do usuário</p>
+            </div>
+            <label for="descricao-evento">Mensagem</label>
+            <textarea id="descricao-evento" rows="10" maxlength="500" required
+                disabled>~ Dúvidas óbvias que poderiam ser tiradas na pagina FAQ~</textarea>
+
+            <label for="descricao-evento">Resposta</label>
+            <textarea id="descricao-evento" rows="10" required placeholder="Digite aqui"></textarea>
+            <p class="info-resumo"><i class="fas fa-exclamation-circle"></i>Ao enviar a resposta, será encaminhado ao
+                email descrito pelo usuário.</p>
+            <!-- Onclick java (Fecha a janela ao clicar) -->
+            <div class="btn">
+                <input id="enviar-resposta" type="submit" onclick="javascript:window.close()" value="Enviar Resposta">
+            </div>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
