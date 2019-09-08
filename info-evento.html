@@ -40,11 +40,14 @@
             <div>
                 <p class="titulo-resumo">Nome da Empresa/Cliente</p>
             </div>
-            <form action="Resumo de compra.html" method="GET">
+            <form class="formularios"action="Resumo de compra.html" method="GET">
                 <p class="form-titulo">Especificações do Evento</p><br>
-
+                
+                <label for="nome-evento">Nome do Evento: *</label>
+                <input type="text" id="nome-evento" required maxlength="30" disabled>
+                
                 <label for="tipo-de-evento">Tipo de Evento: *</label>
-                <select id="tipo-de-evento">
+                <select id="tipo-de-evento" disabled>
                     <option value="" disabled selected></option>
                     <option value="Aniversário">Aniversário</option>
                     <option value="Casamento">Casamento</option>
@@ -59,16 +62,16 @@
                 </select>
 
                 <label for="privacidade">Evento aberto ao público / privado: *</label>
-                <select id="privacidade">
+                <select id="privacidade" disabled>
                     <option value="" disabled selected></option>
                     <option value="publico" required>Público</option>
                     <option value="privado">Privado</option>
                 </select>
                 <label for="qtd">Quantidade estimada de convidados: *</label>
-                <input type="number" id="qtd" min="1" max="150" placeholder="De 0 à 150 convidados">
+                <input type="number" id="qtd" min="1" max="150" placeholder="De 0 à 150 convidados" disabled>
 
                 <label for="data-evento">Data do Evento: *</label>
-                <input type="date" id="data-evento" required>
+                <input type="date" id="data-evento" required disabled> 
 
 
                 <div>
@@ -80,7 +83,7 @@
                     <label class="radio-checkbox" for="luz">Iluminação</label><br>
                 </div>
                 <label for="descricao-evento">Descrição do Evento:*</label>
-                <textarea id="descricao-evento" rows="5" maxlength="500" required
+                <textarea  id="descricao-evento" rows="5" maxlength="500" required
                     disabled>Descrição do evento pelo cliente</textarea>
 
                 <div>
@@ -100,28 +103,28 @@
                     <div class="icones-adm">
                         <p>Cartão de débito/crédito:</p>
 
-                        <input type="radio" id="paypal" name="cartao">
+                        <input type="radio" id="paypal" name="cartao" disabled>
                         <label for="paypal"><i class="fab fa-cc-paypal"></i></label>
 
-                        <input type="radio" id="mastercard" name="cartao">
+                        <input type="radio" id="mastercard" name="cartao" disabled>
                         <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
 
-                        <input type="radio" id="visa" name="cartao">
+                        <input type="radio" id="visa" name="cartao" disabled>
                         <label for="visa"><i class="fab fa-cc-visa"></i></label>
                     </div>
                     
                     <div class="boleto-adm">
                         <p>Boleto:</p>
-                        <input type="radio" id="boleto" name="cartao">
+                        <input type="radio" id="boleto" name="cartao" disabled>
                         <label for="boleto"><img src="Img/boleto.svg"></label>
                     </div>
                 </div>
 
             </form>
             <div class="btn">
-                <a href="Dashboard adm.html"><button>Aceitar</button></a>
+                <button onclick="javascript:window.close()">Aceitar</button></a>
 
-                <a href="Dashboard adm.html"><button>Recusar</button></a>
+                <button onclick="javascript:window.close()">Recusar</button></a>
             </div>
         </div>
     </div>

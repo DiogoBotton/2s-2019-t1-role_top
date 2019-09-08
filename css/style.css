@@ -147,7 +147,6 @@ body {
 #check {
     display: none;
 }
-
 /*------------------------------------------------------------------------------------*/
 
 /*-------------------------------------Sobre Nós--------------------------------------*/
@@ -156,9 +155,9 @@ body {
 
 #sobrenos p:nth-child(odd) {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: bayoc;
-    margin: 3em;
+    margin: 1.5em;
     text-decoration: underline;
 }
 
@@ -176,22 +175,28 @@ body {
 
 /*------------------------------------------------------------------------------------*/
 
-#programacaohome {
+.programacao {
     text-align: center;
     font-family: bayoc;
-    font-size: 2em;
-    width: 100%
+    font-size: 1.5em;
+    width: 25em;
+    margin: 1em auto;
 }
-.programacao {
-    border: 2em solid transparent;
-    border-image: url(../Img/Programação\ barra1.png) 64;
+.programacao-top {
+    background-color: #FFBC65;
+    text-align: center;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+.programacao-bottom {
+    background-color: #FFBC65;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+.programacao-bottom img {
+    width: 1em;
 }
 
-.clientes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -205,7 +210,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: bayoc;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 100%;
     border-top: 1px solid #B4B4B4;
 }
@@ -309,17 +314,13 @@ body {
     display: flex;
     justify-content: center;
 }
-#input-container-centro {
-    display: flex;
-    justify-content: center;
-}
 #faq {
     width: 30em;
 }
 #login {
     width: 23em;
 }
-form {
+.formularios {
     /* background-image: url(../Img/Janela\ generica.svg);
     background-size: cover; */
     background: linear-gradient(to bottom, #FFBC65,#F1C93E);
@@ -441,12 +442,6 @@ form p {
     margin-top: 1em;
     text-align: center;
 }
-.resumo ul {
-    list-style: none;
-}
-.resumo ul li {
-    margin: 1.5em;
-}
 .btn {
     display: flex;
     justify-content: center;
@@ -467,7 +462,7 @@ form p {
 }
 /*------------------------------------------------------------------------------------*/
 
-/*---------------------------------Informações de evento (Admin)-------------------------------*/
+/*---------------------------------Informações de evento e mensagens (Admin)-------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
 .section-pagamento-adm {
@@ -498,6 +493,90 @@ form p {
 }
 .boleto-adm img {
     width:5em;
+    /* cursor: pointer; */
+}
+.form-msg-adm {
+    margin: 1em;
+}
+input#enviar-resposta {
+    padding: .7em;
+    border-radius: 1em;
+    border:none;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*-----------------------------Informações de evento (Usuário)------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+.resumo-usuario {
+    background: linear-gradient(to bottom, #FFBC65,#F1C93E);
+    margin: 5em 0 5em 1em;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    width: 40em;
+    border: 2px solid #000;
+}
+.resumo-usuario table {
+    margin-top: 2em;
+}
+.resumo-usuario table td, th {
+    border: 1px solid #000;
+    font-size: 1.2em;
+}
+.resumo-usuario button {
+    border-radius: 1em;
+    border:none;
+    width: 10em;
+    padding: .8em;
+    margin: 1em;
+    cursor: pointer;
+}
+.btn-usuario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+.titulo-pedidos {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em 0 0 1em;;
+}
+.carrinho-vazio{
+    background: linear-gradient(to bottom, #FFBC65,#F1C93E);
+    margin: 0 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    width: 40em;
+    border: 2px solid #000;
+
+}
+.info-vazio {
+    padding: 2em;
+    font-size: 1.2em;
+}
+.btn-minhaconta {
+    border: 1px solid #000;
+    width: 30em;
+    border-radius: .5em;
+    margin: 2em 1em;
+    background-color: rgb(255, 205, 111);
+}
+.btn-minhaconta button {
+    border-radius: .5em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:none;
+    width: 20em;
+    padding: .8em;
+    margin: 1em;
+    cursor: pointer;
+    background-color: #fff;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -701,6 +780,12 @@ form p {
     .resumo-adm {
         width: 30em;
     }
+    .resumo-usuario {
+        width: 30em;
+    }
+    .carrinho-vazio {
+        width:30em;
+    }
     /*Fechamento @media abaixo*/
 }
 @media (max-width: 900px){ 
@@ -759,6 +844,12 @@ form p {
     .resumo-adm {
         width: 25em;
     }
+    .resumo-usuario {
+        width: 24em;
+    }
+    .carrinho-vazio {
+        width: 24em;
+    }
     .resumo button {
         border-radius: 1em;
         border:none;
@@ -782,6 +873,9 @@ form p {
         justify-content: space-evenly;
         flex-direction: column;
         text-align: center;
+    }
+    .btn-minhaconta {
+        width: 24em;
     }
 }
 @media (max-width: 400px) {
@@ -814,11 +908,26 @@ form p {
     .resumo-adm {
         width: 18em;
     }
+    .resumo-usuario {
+        width: 16.5em;
+        margin: 5em auto;
+    }
+    .carrinho-vazio {
+        width:16.5em;
+        margin: 5em auto;
+    }
     .resumo-adm button {
         border-radius: 1em;
         border:none;
         width: 6em;
         margin: 1em;
+    }
+    .btn-minhaconta {
+        width: 16.5em;
+        margin: 5em auto;
+    }
+    .btn-minhaconta button {
+        width: 14em;
     }
 }
 
