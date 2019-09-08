@@ -11,21 +11,25 @@
 /*
 	Theme controls how everything looks in Gallery CSS.
 */
+
 .gallery {
   position: relative;
 }
+
 .gallery .item {
   height: 12.5em;
   overflow: hidden;
   text-align: center;
   background: #4d87e2;
 }
+
 .gallery .controls {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
+
 .gallery .control-button {
   display: inline-block;
   margin: 0 .02em;
@@ -33,4 +37,18 @@
   text-align: center;
   text-decoration: none;
   transition: color .1s;
+}
+
+/*--------------------------------Efeito GALLERY CSS Responsivo------------------------------*/
+
+@media (max-width: 600px) {
+  .gallery .item {
+    height: 8.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery .item {
+    height: 6em;
+  }
 }

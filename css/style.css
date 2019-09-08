@@ -462,7 +462,7 @@ form p {
 }
 /*------------------------------------------------------------------------------------*/
 
-/*---------------------------------Informações de evento e mensagens (Admin)-------------------------------*/
+/*-----------------------Informações de evento e mensagens (Admin)--------------------*/
 
 /*------------------------------------------------------------------------------------*/
 .section-pagamento-adm {
@@ -877,6 +877,9 @@ input#enviar-resposta {
     .btn-minhaconta {
         width: 24em;
     }
+    .programacao {
+        width: 16.5em;
+    }
 }
 @media (max-width: 400px) {
     .menu ul li {
@@ -928,6 +931,9 @@ input#enviar-resposta {
     }
     .btn-minhaconta button {
         width: 14em;
+    }
+    .programacao {
+        width: 12em;
     }
 }
 
