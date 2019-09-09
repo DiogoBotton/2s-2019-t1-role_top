@@ -684,59 +684,66 @@ button.voltar-calendario {
 .eventos {
     background: #B3AEFF;
     margin: 0 1.5em;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column;*/
     border: 1px solid #000;
 }
 
 .eventos tr {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     margin-bottom: 1em;
-    align-items: center;
+    font-size: 1.2em;
 }
 .eventos td {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    width: 30em;
 }
 
 .eventos th {
     border: 1px solid #000;
-    width: 100%;
+     /* width: 100%; */
+
 }
-.mensagens {
-    border: 1px solid #000;
+tfoot .aceitos {
+    background: rgb(16, 141, 0);
 }
+tfoot .recusados {
+    background: rgb(187, 0, 0);
+}
+
+
 /*------------------------------------------------------------------------------------*/
 
 /*-------------------------------Mensagens de usuários--------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
+
 .mensagens {
     background: #B3AEFF;
     margin: 0 1.5em;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column;*/
+    border: 1px solid #000;
 }
 
 .mensagens tr {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     margin-bottom: 1em;
-    align-items: center;
-    
+    font-size: 1.2em;
 }
 .mensagens td {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    width: 50em;
 }
 
 .mensagens th {
     border: 1px solid #000;
-    width: 100%;
+     /* width: 100%; */
+
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -822,10 +829,10 @@ button.voltar-calendario {
     }
     /*-----Tabela Admin-----*/
     .eventos th {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .eventos td {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bold;
     }
     .plantas-top {
@@ -837,7 +844,7 @@ button.voltar-calendario {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
-       
+      
     }
     .resumo {
         width: 30em;
@@ -876,7 +883,7 @@ button.voltar-calendario {
     }
     /*-----Tabela Admin-----*/
     .eventos th {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .eventos td {
         font-size: 1em;
@@ -980,7 +987,7 @@ button.voltar-calendario {
     }
     /*-----Tabela Admin-----*/
     .eventos th {
-        font-size: .7em;
+        font-size: .8em;
     }
     .eventos td {
         font-size: .6em;
