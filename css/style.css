@@ -197,6 +197,52 @@ body {
     width: 1em;
 }
 
+/*------------------Calendário------------------*/
+.calendario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000; 
+    margin: 0 auto;
+    width: 60em;
+}
+.calendario tr {
+    font-size: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.calendario td {
+    border: 1px solid #000;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    
+}
+.calendario th {
+    border: 1px solid #000;
+    width: 100%; 
+}
+td.mes-dif {
+    color: rgb(167, 167, 167);
+}
+.mes {
+    background: #F1C93E;
+}
+.dia {
+    background: #FFBC65;
+}
+.dias-n {
+    background: rgba(255, 196, 0, 0.45);
+}
+.dias-n:hover {
+    background: #F1C93E;
+}
+.mes-dif {
+    background: rgba(255, 206, 45, 0.30);
+}
+.dia-evento {
+    background: rgb(255, 217, 78);
+    cursor: pointer;
+}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -326,7 +372,7 @@ body {
     background: linear-gradient(to bottom, #FFBC65,#F1C93E);
     border-top-left-radius: 5em;
     border-top-right-radius: 5em;
-    margin: 1em;
+    margin: 0 1em 1em 1em;
     padding: 3em 1em 1em;
     display:flex;
     flex-direction: column;
@@ -336,6 +382,9 @@ form .form-titulo {
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 1em;
+    font-weight: bold;
+}
+.form-titulo {
     font-weight: bold;
 }
 textarea#termos {
@@ -504,6 +553,7 @@ input#enviar-resposta {
     border:none;
     cursor: pointer;
 }
+
 /*------------------------------------------------------------------------------------*/
 
 /*-----------------------------Informações de evento (Usuário)------------------------*/
@@ -578,6 +628,20 @@ input#enviar-resposta {
     cursor: pointer;
     background-color: #fff;
 }
+/*------------------------------------------------------------------------------------*/
+
+/*----------------------------Visualização de evento público--------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+button.voltar-calendario {
+    width: 18em;
+    border-radius: .5em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.banner-evento {
+    margin: 1em 1em 0 1em;
+}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -627,7 +691,6 @@ input#enviar-resposta {
 
 .eventos tr {
     display: flex;
-    flex-direction: row;
     list-style: none;
     justify-content: space-between;
     margin-bottom: 1em;
@@ -641,7 +704,9 @@ input#enviar-resposta {
 .eventos th {
     border: 1px solid #000;
     width: 100%;
-    
+}
+.mensagens {
+    border: 1px solid #000;
 }
 /*------------------------------------------------------------------------------------*/
 
@@ -786,6 +851,12 @@ input#enviar-resposta {
     .carrinho-vazio {
         width:30em;
     }
+    .calendario {
+        width: 50em;
+    }
+    .calendario tr {
+        font-size: 2.5em;
+    }
     /*Fechamento @media abaixo*/
 }
 @media (max-width: 900px){ 
@@ -804,10 +875,10 @@ input#enviar-resposta {
         font-size: .9em;
     }
     /*-----Tabela Admin-----*/
-    th {
+    .eventos th {
         font-size: 1.2em;
     }
-    td {
+    .eventos td {
         font-size: 1em;
     }
     .resumo {
@@ -816,16 +887,25 @@ input#enviar-resposta {
     .resumo-adm {
         width: 30em;
     }
+    .calendario tr {
+        font-size: 2.4em;
+    }
+    .calendario td {
+        padding: .4em
+    }
+    .calendario {
+        width: 37.5em;
+    }
 }
 @media (max-width: 600px) {
     .banner-area a {
         font-size: 1.5em;
     }
     /*-----Tabela Admin-----*/
-    th {
+    .eventos th {
         font-size: 1em;
     }
-    td {
+    .eventos td {
         font-size: .8em;
     }
     .titulo-adm {
@@ -879,6 +959,15 @@ input#enviar-resposta {
     }
     .programacao {
         width: 16.5em;
+    }
+    .calendario {
+        width: 25em;
+    }
+    .calendario tr {
+        font-size: 1.2em;
+    }
+    .calendario td {
+        padding: .4em
     }
 }
 @media (max-width: 400px) {
@@ -934,6 +1023,15 @@ input#enviar-resposta {
     }
     .programacao {
         width: 12em;
+    }
+    .calendario {
+        width: 18.5em;
+    }
+    .calendario tr {
+        font-size: .85em;
+    }
+    .calendario td {
+        padding: .3em
     }
 }
 

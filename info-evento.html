@@ -40,11 +40,17 @@
             <div>
                 <p class="titulo-resumo">Nome da Empresa/Cliente</p>
             </div>
+            
+            <div class="banner-evento">
+                    <p class="form-titulo">Banner do evento:</p>
+                    <img src="Img/Pink floyd.png">
+                </div>
             <form class="formularios"action="Resumo de compra.html" method="GET">
-                <p class="form-titulo">Especificações do Evento</p><br>
+                
+                <p class="form-titulo">Especificações do Evento</p>
                 
                 <label for="nome-evento">Nome do Evento: *</label>
-                <input type="text" id="nome-evento" required maxlength="30" disabled>
+                <input type="text" id="nome-evento" maxlength="30" disabled>
                 
                 <label for="tipo-de-evento">Tipo de Evento: *</label>
                 <select id="tipo-de-evento" disabled>
@@ -64,14 +70,14 @@
                 <label for="privacidade">Evento aberto ao público / privado: *</label>
                 <select id="privacidade" disabled>
                     <option value="" disabled selected></option>
-                    <option value="publico" required>Público</option>
+                    <option value="publico">Público</option>
                     <option value="privado">Privado</option>
                 </select>
                 <label for="qtd">Quantidade estimada de convidados: *</label>
                 <input type="number" id="qtd" min="1" max="150" placeholder="De 0 à 150 convidados" disabled>
 
                 <label for="data-evento">Data do Evento: *</label>
-                <input type="date" id="data-evento" required disabled> 
+                <input type="date" id="data-evento" disabled> 
 
 
                 <div>
@@ -83,7 +89,7 @@
                     <label class="radio-checkbox" for="luz">Iluminação</label><br>
                 </div>
                 <label for="descricao-evento">Descrição do Evento:*</label>
-                <textarea  id="descricao-evento" rows="5" maxlength="500" required
+                <textarea  id="descricao-evento" rows="5" maxlength="500"
                     disabled>Descrição do evento pelo cliente</textarea>
 
                 <div>
@@ -122,9 +128,9 @@
 
             </form>
             <div class="btn">
-                <button onclick="javascript:window.close()">Aceitar</button></a>
+                <button onclick="javascript:window.close()">Aceitar</button>
 
-                <button onclick="javascript:window.close()">Recusar</button></a>
+                <button onclick="javascript:window.close()">Recusar</button>
             </div>
         </div>
     </div>
