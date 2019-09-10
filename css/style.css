@@ -199,27 +199,22 @@ body {
 
 /*------------------Calendário------------------*/
 .calendario {
-    display: flex;
-    flex-direction: column;
+   
     border: 1px solid #000; 
     margin: 0 auto;
     width: 60em;
 }
 .calendario tr {
     font-size: 3em;
-    display: flex;
-    justify-content: space-between;
 }
 .calendario td {
     border: 1px solid #000;
-    width: 100%;
     text-align: center;
     padding: .5em;
-    
 }
 .calendario th {
     border: 1px solid #000;
-    width: 100%; 
+   
 }
 td.mes-dif {
     color: rgb(167, 167, 167);
@@ -241,8 +236,8 @@ td.mes-dif {
 }
 .dia-evento {
     background: rgb(255, 217, 78);
-    cursor: pointer;
 }
+
 
 /*------------------------------------------------------------------------------------*/
 
@@ -463,6 +458,18 @@ form p {
 
 /*------------------------------------------------------------------------------------*/
 
+/*-----------------------Tela de cadastro realizado com sucesso-----------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+.info-cadastro {
+    font-size: 1.5em;
+    margin: 1em 1em;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------------*/
+
 /*----------------------------------Resumo de compra----------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
@@ -595,7 +602,7 @@ input#enviar-resposta {
     font-size: 2em;
     margin: 1em 0 0 1em;;
 }
-.carrinho-vazio{
+.nenhuma-reserva{
     background: linear-gradient(to bottom, #FFBC65,#F1C93E);
     margin: 0 0 1em 1em;
     display: flex;
@@ -619,7 +626,7 @@ input#enviar-resposta {
 .btn-minhaconta button {
     border-radius: .5em;
     display:flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border:none;
     width: 20em;
@@ -627,6 +634,9 @@ input#enviar-resposta {
     margin: 1em;
     cursor: pointer;
     background-color: #fff;
+}
+.btn-minhaconta button .fas {
+    font-size: 1.5em;
 }
 /*------------------------------------------------------------------------------------*/
 
@@ -712,7 +722,12 @@ tfoot .aceitos {
 tfoot .recusados {
     background: rgb(187, 0, 0);
 }
-
+tfoot .pendentes {
+    background: rgb(255, 164, 27);
+}
+tfoot .cancelados {
+    background: rgb(187, 0, 0);
+}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -910,10 +925,10 @@ tfoot .recusados {
     }
     /*-----Tabela Admin-----*/
     .eventos th {
-        font-size: 1em;
+        font-size: .9em;
     }
     .eventos td {
-        font-size: .8em;
+        font-size: .7em;
     }
     .titulo-adm {
         padding: .5em;
@@ -976,6 +991,9 @@ tfoot .recusados {
     .calendario td {
         padding: .4em
     }
+    tr td img {
+        width: 2em;
+    }
 }
 @media (max-width: 400px) {
     .menu ul li {
@@ -987,7 +1005,7 @@ tfoot .recusados {
     }
     /*-----Tabela Admin-----*/
     .eventos th {
-        font-size: .8em;
+        font-size: .6em;
     }
     .eventos td {
         font-size: .6em;
