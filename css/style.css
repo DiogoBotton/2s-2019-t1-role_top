@@ -238,6 +238,28 @@ td.mes-dif {
     background: rgb(255, 217, 78);
 }
 
+/*------------------------------------------------------------------------------------*/
+
+/*----------------------------------Tabela de Preços----------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+#tabela-precos {
+    text-align: center;
+    border-top: 1px solid #B4B4B4;
+}
+#tabela-precos p {
+    font-family: bayoc;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+#tabela-precos img {
+    margin: 3em;
+}
+
+#tabela-precos-agendamento {
+    text-align: center;
+}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -560,7 +582,11 @@ input#enviar-resposta {
     border:none;
     cursor: pointer;
 }
-
+.info-fim {
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
 /*------------------------------------------------------------------------------------*/
 
 /*-----------------------------Informações de evento (Usuário)------------------------*/
