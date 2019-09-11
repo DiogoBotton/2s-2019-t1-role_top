@@ -393,7 +393,7 @@ td.mes-dif {
     padding: 3em 1em 1em;
     display:flex;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
 }
 form .form-titulo {
     font-size: 1.5em;
@@ -477,7 +477,10 @@ form p {
 #paypal,#mastercard,#visa,#boleto {
     display: none;
 }
-
+.check-radio-centro {
+    display: flex;
+    justify-content: space-around;
+}
 /*------------------------------------------------------------------------------------*/
 
 /*-----------------------Tela de cadastro realizado com sucesso-----------------------*/
@@ -586,6 +589,14 @@ input#enviar-resposta {
     display: flex;
     margin: 0 auto;
     font-size: 1.2em;
+}
+.resumo-evento-adm {
+    margin: 0 1em 1em 1em;
+    padding: 3em 1em 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
 /*------------------------------------------------------------------------------------*/
 
@@ -944,6 +955,9 @@ tfoot .cancelados {
     .calendario {
         width: 37.5em;
     }
+    .formularios {
+        width: 80%;
+    }
 }
 @media (max-width: 600px) {
     .banner-area a {
@@ -1020,6 +1034,9 @@ tfoot .cancelados {
     tr td img {
         width: 2em;
     }
+    .formularios {
+        width: 80%;
+    }
 }
 @media (max-width: 400px) {
     .menu ul li {
@@ -1083,6 +1100,9 @@ tfoot .cancelados {
     }
     .calendario td {
         padding: .3em
+    }
+    .formularios {
+        width:80%;
     }
 }
 

@@ -81,22 +81,36 @@
 
                 <div>
                     <p>Serviços Adicionais<br><i>(Aumenta o orçamento)</i>:</p><br>
-                    <input type="checkbox" id="som" name="som" value="Equipamento de Som">
-                    <label class="radio-checkbox" for="som">Equipamento de Som</label>
+                    <div class="check-radio-centro">
+                        <div>
 
-                    <input type="checkbox" id="luz" name="luz" value="Iluminação">
-                    <label class="radio-checkbox" for="luz">Iluminação</label><br>
+                            <input type="checkbox" id="som" name="sv-adc" value="Equipamento de Som">
+                            <label class="radio-checkbox" for="som">Equipamento de Som</label>
+                        </div>
+                        <div>
+
+                            <input type="checkbox" id="luz" name="sv-adc" value="Iluminação">
+                            <label class="radio-checkbox" for="luz">Iluminação</label><br>
+                        </div>
+                    </div>
                 </div>
                 <label for="descricao-evento">Descrição do Evento:*</label>
                 <textarea id="descricao-evento" rows="5" maxlength="500" required></textarea>
 
                 <div>
                     <p>Permitir visibilidade do seu evento na programação (agenda) do site? *</p>
-                    <input type="radio" id="sim" name="termos">
-                    <label class="radio-checkbox" for="sim">Sim</label>
+                    <div class="check-radio-centro">
+                        <div>
 
-                    <input type="radio" id="nao" name="termos">
-                    <label class="radio-checkbox" for="nao">Não</label><br>
+                            <input type="radio" id="sim" name="visibilidade">
+                            <label class="radio-checkbox" for="sim">Sim</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="nao" name="visibilidade">
+                            <label class="radio-checkbox" for="nao">Não</label><br>
+                        </div>
+                    </div>
                 </div>
 
                 <p>Banner do evento: <i>(Opcional)</i></p>
@@ -107,12 +121,19 @@
                     <label for="termos">Termos de uso do espaço:*</label><br>
                     <textarea class="termos" rows="6"
                         disabled>Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa a levantar dúvidas sobre a realidade. E quando encontra os misteriosos Morpheus e Trinity, ele descobre que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</textarea><br>
+                    <div class="check-radio-centro">
 
-                    <input type="radio" id="termo-aceito" name="termos" required>
-                    <label for="termo-aceito">Aceito os termos de uso.</label>
+                        <div>
 
-                    <input type="radio" id="termo-recusado" name="termos">
-                    <label for="termo-recusado">Não aceito os termos de uso.</label>
+                            <input type="radio" id="termo-aceito" name="termos" required>
+                            <label for="termo-aceito">Aceito os termos de uso.</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" id="termo-recusado" name="termos">
+                            <label for="termo-recusado">Não aceito os termos de uso.</label>
+                        </div>
+                    </div>
                 </div>
                 <br><br>
 
