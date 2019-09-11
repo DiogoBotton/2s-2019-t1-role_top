@@ -596,7 +596,7 @@ input#enviar-resposta {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
 /*------------------------------------------------------------------------------------*/
 
@@ -688,6 +688,15 @@ button.voltar-calendario {
 }
 .banner-evento {
     margin: 1em 1em 0 1em;
+}
+.evento-publico {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    width:90%;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -907,7 +916,7 @@ tfoot .cancelados {
     .resumo-usuario {
         width: 30em;
     }
-    .carrinho-vazio {
+    .nenhuma-reserva {
         width:30em;
     }
     .calendario {
@@ -989,7 +998,7 @@ tfoot .cancelados {
     .resumo-usuario {
         width: 24em;
     }
-    .carrinho-vazio {
+    .nenhuma-reserva  {
         width: 24em;
     }
     .resumo button {
@@ -997,6 +1006,9 @@ tfoot .cancelados {
         border:none;
         width: 8em;
         margin: 1em;
+    }
+    .btn button.voltar-calendario {
+        width: 15em;
     }
     .resumo-adm button {
         border-radius: 1em;
@@ -1072,7 +1084,7 @@ tfoot .cancelados {
         width: 16.5em;
         margin: 5em auto;
     }
-    .carrinho-vazio {
+    .nenhuma-reserva {
         width:16.5em;
         margin: 5em auto;
     }
@@ -1081,6 +1093,9 @@ tfoot .cancelados {
         border:none;
         width: 6em;
         margin: 1em;
+    }
+    .btn button.voltar-calendario {
+        width: 13em;
     }
     .btn-minhaconta {
         width: 16.5em;
@@ -1104,6 +1119,9 @@ tfoot .cancelados {
     .formularios {
         width:80%;
     }
+    .titulo-resumo {
+        font-size: 1.2em;
+    }
 }
 
-/* menu de navegação mobile (aumentar apartir de 400 px)*/
+/* menu de navegação mobile (apartir de 1017 px)*/
